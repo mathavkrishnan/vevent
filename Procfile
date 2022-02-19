@@ -1,1 +1,2 @@
-web: gunicorn veventz.wsgi --log-file -
+release: python manage.py migrate
+web: gunicorn veventz.wsgi
