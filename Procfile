@@ -1,0 +1,1 @@
+web: gunicorn veventz.wsgi --log-file -
