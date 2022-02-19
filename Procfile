@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn veventz.wsgi
+web: python manage.py collectstatic --no-input; gunicorn veventz.wsgi
